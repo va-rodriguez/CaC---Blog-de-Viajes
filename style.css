@@ -1,252 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: 'Nunito';
 }
 
-body {
-    background: linear-gradient(to top, transparent, rgba(212, 118, 24, 0.5)), url(img/fondo.jpg);
+  
+body{
+    background: linear-gradient(to top,transparent,rgba(239, 204, 28, 0.5)), url(img/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+   
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px 50px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+.header{
     width: 100%;
-    position: relative;
-    z-index: 999;
-}
-
-header h1 {
-    font-size: 24px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 33px;
-    font-size: 14px;
-    padding: 5px 10px;
-    transition: .5s;
+    background-color: rgba(0,0,0,.7);
     border-radius: 20px;
-}
-
-header nav ul li a:hover {
-    background-color: #000;
-}
-
-header .busqueda {
-    position: relative;
-}
-
-header .busqueda input {
-    display: inline-block;
-    width: 200px;
-    border: none;
-    background-color: rgba(150, 140, 140, 0.4);
-    padding: 7px;
-    outline: none;
+    padding: 5px;
     color: #fff;
-    border-right: 3px;
-    transition: .5s;
-    opacity: 0;
-}
-
-header .busqueda:hover input {
-    opacity: 1;
-}
-
-header .busqueda i {
-    cursor: pointer;
-}
-
-@keyframes avionAnimacion {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-header h1 {
-    font-size: 24px;
-    position: relative;
-}
-
-header h1::before {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: -40px; 
-    width: 40px; 
-    height: 40px;
-    background-image: url('./img/avion.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: avionAnimacion 5s linear infinite; 
-}
-
-.contenedor {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    color: #fff;
-}
-
-.contenido {
-    display: flex;
-    position: relative;
-}
-
-.contenido .linea-decorativa {
-    position: absolute;
-    height: 250px;
-    border-left: 2px solid #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.contenido .linea-decorativa .circulo {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-left: -9px;
-}
-
-.contenedor .contenido .left {
-    width: 50%;
-    margin-top: 30px;
-    padding-left: 50px;
-}
-
-.contenedor .contenido .left h2 {
-    padding-top: 60px;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.contenedor .contenido .left p {
-    margin-bottom: 60px;
-    font-size: 14px;
-}
-
-.contenedor .contenido .left button {
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 5px 20px;
-    border-radius: 30px;
-    margin-bottom: 60px;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.contenedor .contenido .left button:hover {
-    background-color: #000;
-}
-
-.contenedor .contenido .left .redes {
-    font-size: 12px;
-    width: fit-content;
-    padding-bottom: 7px;
-    border-bottom: 2px solid #fff;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor .contenido .left .redes a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.contenedor .contenido .right {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
-    text-align: right;
-}
-
-.contenedor .contenido .right .popular {
-    border-bottom: 2px solid #fff;
-    width: 100px;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    font-size: large;
-    font-weight: 800;
+    overflow: hidden;
+    top:0;
+    left:0;
+    z-index:9999;
+    
     
 }
 
-.contenedor .contenido .right .contenedor-fotos {
+
+a {
+    color: white;
+    font-size: 18px;
+}
+
+nav{
     display: flex;
-    justify-content: end;
-}
-
-.contenedor .contenido .right .contenedor-fotos img {
-    width: 25%;
-    margin: 0 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.contenedor .contenido .right .contenedor-fotos img:hover {
-    transform: scale(1.1);
-}
-
-
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px 50px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
+    height: 50px;
+    color:white
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:25px;
+    color:white
+}
+
+.nav-links li a {
+    color: white
+}
+
+
+#banner{
+    background-image: url(/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding-top: 50px;
+}
+
+#banner h1{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+#banner h2{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+#banner p{
+    text-align: center;
+    color: white
+}
+
+.search-form{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    display:flex;
+    align-items:center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: white;
+    height: 3rem;
+    width: 30rem;
+
+   
+  
+}
+
+#banner  .search-form input{
+    outline: none;
+    font-family: serif;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-form input:-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.search-form .btn-search{
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+
+
+footer{
+    
+    background-color: rgba(0,0,0,.7);
+    padding: 5px;
+    border-radius: 20px;
     width: 100%;
-}
-
-footer .redes {
-    font-size: 20px;
-}
-
-footer .redes a {
-    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
     color: #fff;
-    margin: 0 10px;
+    position: absolute;
+    bottom: 0;
+    
+}   
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    margin:0 5px;
+    font-size: 14px;
+}
+
+footer a:hover{
+    color: rgb(130, 155, 238)
+}
+
+.redes{
+    margin: 5px 0;
+}
+
+
+
+.quienes-somos{
+    background-image: url(/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding-top: 50px;
+}
+
+
+.quienes-somos h1{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+.quienes-somos p{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+
+
+.integrantes-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    grid-row: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 20px;
+
+}
+
+.integrantes-item{
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.integrantes-item p{
+    color:black
+}
+
+.integrante-img{
+    align-items: center;
+    width: 250px;
+    height: 250px;
 }
 
