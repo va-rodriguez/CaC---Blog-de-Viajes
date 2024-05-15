@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a8b168647e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Contacto</title>
+</head>
+
+<body class="body-register">
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="/index.html"><i class="fa-solid fa-plane-departure"></i>Viajeros Cac - Los Mejores destinos en el Mundo</a></a></div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Explorar</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form-wrapper">
+        <h2>Contáctenos</h2>
+        <form id="formContacto" method="post" novalidate action="#">
+            <div class="form-control">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" size="15" maxlength="20">
+            </div>
+            <div class="form-control">
+                <label for="surname">Apellido:</label>
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido" size="15" maxlength="20">
+            </div>
+            <div class="form-control">
+                <label for="gender">Género:</label>
+                <select name="gender" id="gender" class="form-select">
+                    <option value="">Seleccione</option>
+                    <option value="fem">Femenino</option>
+                    <option value="masc">Masculino</option>
+                    <option value="non">No binario</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="mail">Correo Electrónico:</label>
+                <input type="email" name="mail" id="mail" placeholder="Ingrese su correo electrónico" size="25">
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Número de Celular:</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Ingrese su número de celular">
+            </div>
+            <div class="form-control">
+                <label>Déjenos su comentario:</label>
+                <br>
+                <textarea name="comments" cols="30" rows="5" placeholder="Ingrese su mensaje..."></textarea>
+            </div>
+            <button type="reset">Cancelar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="">Política y Privacidad</a>
+        <a href="">Términos y Condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Soporte</a>
+        <a href=""><i class="fa-solid fa-circle-question"></i></a>
+        <div class="redes">
+            <a href="https://www.facebook.com/?locale=es_ES/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
