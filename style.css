@@ -270,15 +270,6 @@ footer .derechos p {
 	justify-content: center;
 }
 
-/* .container {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    padding: 50px;
-    color: #fff;
-} */
 main .container {
     width: 100%;
     max-width: 600px;
