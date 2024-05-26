@@ -579,7 +579,7 @@ form button {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .destinos-grid {
-    padding: 1rem 2rem;
+     padding: 1rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     gap: 0.5rem;
