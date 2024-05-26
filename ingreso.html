@@ -17,9 +17,9 @@
     </head>
     <body class="body">
         <header>
-            <h1>Viajeros</h1>
+            <h1><a href="index.html">Viajeros</a></h1>
             <nav>
-                <ul>
+                <ul class="nav-links desktop-nav">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -31,6 +31,31 @@
                 <input type="text" placeholder="Buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <!--Menu Hamburguesa-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-toggle-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links mobile-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="ingreso.html">Login</a></li>
+            </ul>
+
+            <!-- <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="ingreso.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
         </header>
         <main class="main_ingreso">
             <div class="container">
@@ -57,6 +82,13 @@
             </div>
         </main>
         <footer>
+            <div class="legales">
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
             <div class="redes">
                 <a href="https://www.facebook.com/?locale=es_ES/"><i
                         class="fa-brands fa-facebook-f"></i></a>
@@ -64,6 +96,9 @@
                         class="fa-brands fa-square-x-twitter"></i></a>
                 <a href="https://www.instagram.com/"><i
                         class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="derechos">
+                <p>© 2024 Viajemos - Todos los derechos reservados.</p>
             </div>
         </footer>
         <script
@@ -75,6 +110,6 @@
             integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="ingreso.js"></script>
+        <script src="./static/scripts.js"></script>
     </body>
 </html>
