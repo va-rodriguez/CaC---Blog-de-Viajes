@@ -5,7 +5,7 @@ Grupo 3: Valentin Rodriguez
          Sebastian Buttafuoco
          Helga Van der Tuin
 
-###Sobre el Proyecto: 
+##Sobre el Proyecto: 
 La idea del Proyecto fue realizar el sitio Web estilo Blog de Viajes, para hablar de los diferentes destinos turisticos.
 
 **HERRAMIENTAS UTILIZADAS**
