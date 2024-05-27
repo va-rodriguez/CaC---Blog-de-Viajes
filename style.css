@@ -690,6 +690,19 @@ form button {
     header .busqueda input {
         width: 100px;
     }
+    
+    .quienes-somos p {
+        font-size: 1.2rem;
+        width: 500px;
+        height: 150px;
+        margin-left: 100px;
+    }
+    .box {
+        padding: 0;
+    }
+    .nosotros-card {
+        padding: 0;
+    }
 }
 
 @media (max-width: 426px) {
@@ -735,6 +748,24 @@ form button {
     }
     .banner-contenido h2{
         text-align: center;
+    }
+    .quienes-somos{
+        width: 100%;
+        padding: 0px;
+        margin: 10px;
+    }
+    .quienes-somos p {
+        font-size: 1rem;
+        width: 400px;
+        height: 150px;
+        margin-left: 10px;
+    }
+    .nosotros-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 0px;
+        
     }
     footer {
         justify-content: space-between;
@@ -793,6 +824,24 @@ form button {
     }
     .contenedor .contenido .portada button {
         margin-bottom: 60px;
+    }
+    .quienes-somos{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .quienes-somos p {
+        font-size: 1rem;
+        width: 300px;
+        height: 190px;
+        margin-left: 10px;
+    }
+    .nosotros-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 0px;
+        
     }
     footer {
         padding: 0px;
