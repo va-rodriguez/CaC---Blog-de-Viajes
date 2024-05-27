@@ -5,20 +5,24 @@ Grupo 3: Valentin Rodriguez
          Sebastian Buttafuoco
          Helga Van der Tuin
 
-##Sobre el Proyecto: 
-La idea del Proyecto fue realizar el sitio Web estilo Blog de Viajes, para hablar de los diferentes destinos turisticos.
+**Sobre el Proyecto**
+
+-La idea del Proyecto fue realizar el sitio Web estilo Blog de Viajes, para hablar de los diferentes destinos turisticos.
 
 **HERRAMIENTAS UTILIZADAS**
-HTML
-CSS
-JAVASCRIPT
-GITHUB
+
+-HTML
+-CSS
+-JAVASCRIPT
+-GITHUB
 
 **ETAPAS DEL PROYECTO**
-Se realizaron *5 Páginas en html, con estilo en CSS y Javascript para la funcionalidad para login/Registro y Formulario de Contacto. Se realizo el Responsive para poder usarse en: 
-Desktop
-Tablet
-Mobile
+
+-Se realizaron *5 Páginas en html, con estilo en CSS y Javascript para la funcionalidad para login/Registro y Formulario de Contacto. Se realizo el Responsive para poder usarse en: 
+
+-Desktop
+-Tablet
+-Mobile
 
 **PAGINA PRINCIPAL(Index.html)**
 - Se observa el menu y un boton de Destinos, que al presionarlo, lleva a dicha pagina.
