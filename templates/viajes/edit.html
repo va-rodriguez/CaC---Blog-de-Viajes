@@ -1,0 +1,34 @@
+{% for destino in destinos %}
+{% include 'header.html' %}
+
+<form method="post" action="/update" enctype="multipart/form-data">
+    ID:
+    <input 
+    type="text" 
+    name="txtID" 
+    id="txtID" 
+    value="{{destino[0]}}"/> <br>
+    
+    Ciudad:
+    <input 
+    type="text" 
+    name="txtCiudad" 
+    id="txtCiudad" 
+    value="{{destino[1]}}"/> <br>
+
+    Pais:
+    <input 
+    type="text" 
+    name="txtPais" 
+    id="txtPais" 
+    value="{{destino[2]}}"/> <br>
+
+    Foto:
+    <input type="file" name="txtFoto" id="txtFoto" value="{{destino[3]}}"/> <br>
+    <input type="submit" value ="Guardar Cambios" />
+
+    {% endfor%}
+    
+
+</form>
+{% include 'footer.html' %}

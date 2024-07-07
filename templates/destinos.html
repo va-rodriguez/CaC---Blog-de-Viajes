@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/a8b168647e.js"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="/static/css/style.css" />
+        <title>Destinos-Viajemos</title>
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.png" />
+    </head>
+    <body>
+        <header>
+            <h1><a href="{{url_for('index')}}">Viajeros</a></h1>
+            <nav>
+                <ul class="nav-links desktop-nav">
+                    <li><a href="{{url_for('index')}}">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+
+        <main class="main_destino">
+            <section id="banner-destinos-css" class="banner-destinos-css">
+                <h1>Blog de Viajes Codo a Codo</h1>
+                <h2>Te brindamos los mejores destinos y las recomendaciones</h2>
+                <form action="{{ url_for('index_destino') }}" method="get" style="margin-left: 400px">
+                    <button type="submit" class="btn btn-success">AGREGA el destino que queres conocer</button>
+                </form>
+            </section>
+
+            <section class="container-viajes">
+                <div class="section-container">
+                    <h2 class="titulo">Destinos Nacionales</h2>
+                    <div class="destinos-grid">
+                        <div class="destinos-card">
+                            <img src="static/img/potrerillos.jpg"
+                                alt="Potrerillos, Mendoza, Argentina">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Potrerillos, Argentina</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/chalten.jpg"
+                                alt="El Chaltén, Argentina">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>El Chaltén, Argentina</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/calafate.jpg"
+                                alt="El Calafate, Argentina">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>El Calafate, Argentina</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/ushuaia2.jpg"
+                                alt="Ushuaia, Argentina">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Ushuaia, Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-viajes">
+                <div class="section-container">
+                    <h2 class="titulo">Destinos Internacionales</h2>
+                    <div class="destinos-grid">
+                        <div class="destinos-card">
+                            <img src="static/img/croacia.jpg"
+                                alt="Dubrovnik, Croacia">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dubrovnik, Croacia</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/islandia.jpg"
+                                alt="Reykjavik, Islandia">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Reykjavik, Islandia</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/brasil.jpg"
+                                alt="Porto de Galinhas, Brasil">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Porto de Galinhas, Brasil</span>
+                            </div>
+                        </div>
+                        <div class="destinos-card">
+                            <img src="static/img/londres.jpg"
+                                alt="Londres, Inglaterra">
+                            <div class="destinos-name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Londres, Inglaterra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner-container">
+                <div class="section-container">
+                    <div class="banner-contenido">
+                        <h2>Suscribite a nuestro newsletter</h2>
+                        <h2>Registrate y accedé a descuentos exclusivos</h2>
+                        <button id="registrate-button">Registrate</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="legales">
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/?locale=es_ES/"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es"><i
+                        class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="derechos">
+                <p>© 2024 Viajemos - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="./static/destino.js"></script>
+    </body>
+</html>

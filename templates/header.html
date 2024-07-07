@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD-Listado de Destinos</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="bg-dark py-3 text-white">
+            <div
+                class="container d-flex justify-content-around align-items-center ">
+                <h1><a class="navbar-brand"
+                        href="{{url_for('index')}}">Viajeros</a></h1>
+                <nav class="d-none d-md-block">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link"
+                                href="{{url_for('index')}}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#"></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#"></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="{{url_for('destinos')}}">Destinos</a></li>
+                    </ul>
+                </nav>
+                <div class="form-inline">
+                    <input class="form-control mr-sm-2" type="search"
+                        placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

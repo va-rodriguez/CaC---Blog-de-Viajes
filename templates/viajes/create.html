@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+
+<form method="post" action="/store" enctype="multipart/form-data"
+    style="margin-left: 50px"><br><h2>Ingrese los datos</h2><br>
+    Ciudad:
+    <input type="text" name="txtCiudad" id="txtCiudad" /> <br><br>
+    País:
+    <input type="text" name="txtPais" id="txtPais" /> <br><br>
+    Foto:
+    <input type="file" name="txtFoto" id="txtFoto" /> <br><br>
+    <input type="submit" value="Agregar Destino" /> <br><br>
+</form>
+
+<br /><a href="{{url_for('index_destino')}}" class="btn btn-primary"
+    style="margin-left: 50px"> Volver a la pag. anterior </a><br /><br />
+{% include 'footer.html' %}
